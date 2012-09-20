@@ -1,0 +1,49 @@
+1. setup environment
+	requirements(to compile the code):
+		a. ARToolKit(Windows version)
+			building instructions available at: http://www.hitl.washington.edu/artoolkit/documentation/usersetup.htm
+			full software source code available at: http://sourceforge.net/projects/artoolkit/files/
+		b. LEJOS development environment(0.9.1, Windows version)
+			full software source code available at: http://sourceforge.net/projects/lejos/files/lejos-NXJ-win32/
+			compile and running: http://lejos.sourceforge.net/nxt/nxj/tutorial/Preliminaries/CompileAndRun.htm
+			use with eclipse(the author's project source code is in eclipse format, need plug-in):  http://lejos.sourceforge.net/nxt/nxj/tutorial/Preliminaries/UsingEclipse.htm
+		c. Eclipse
+			available at: http://www.eclipse.org/downloads/
+		d. Microsoft Visual Studio
+			free version  for student available at: https://www.dreamspark.com/
+
+2. folder list
+	maker_recogniton
+		dependency: Require ARToolKit installed
+		description: a folder contains a visual studio ARToolKit project. Use for marker recognition
+		build: to setup up, put it under ARToolkit's root directory and use visual studio to "add existing project", the binary file will go to ~\bin\
+		source code: 
+			path: ~\marker_recognition\marker_recognition\
+			file name: 	main.c (for marker recognition)
+						comm.cpp (for socket connection, sending data)
+	fyp.pc
+		dependency: Require Eclipse(mentioned in step 1.c), LEJOS
+		description: an Eclipse project, all server side code
+		build: import as Eclipse project, require JRE1.6, LEJOS\bluecove.jar, LEJOS\pccomm.jar, see step 1.b
+		source code:
+			path: 
+				~\fyp.pc\src\fyp\pc\stupidSLAM (real code)
+				\fyp.pc\src\fyp\pc\test (test code, test functionality, collect threshold value)
+		other files:
+			DLL for marker recognition executable(under ~\fyp.pc\): msvcp71d.dll, msvcr71d.dll, DSVLd.dll, libARvideod.dll, libARvideo.dll
+			maker recognition binary:
+				SimpleTest.exe: Use to collect threshold value for fyp.robot.stupidSLAM.PositionController
+				marker_recognition.exe Real marker recogntion program, run by fyp.robot.stupidSLAM.Handler
+			other files support marker recognition program:
+				~\Wrl\; ~\Data\
+	fyp.robot
+		dependency: Require Eclipse(mentioned in step 1.c), LEJOS, LEJOS eclipse plug-in(mentioned in step 1.b)
+		description: an Eclipse project, all client side code
+		build: import as Eclipse project, require LEJOS\classes.jar
+		source code:
+			path:
+				~\fyp.robot\src\fyp\robot\stupidSLAM (real code)
+				~\fyp.robot\src\fyp\robot\test (test code)
+
+hardware requirements:
+	LEGO Mindstorms, with ultransonic sensor, light sensor, three motors, a portable projector, a webcam

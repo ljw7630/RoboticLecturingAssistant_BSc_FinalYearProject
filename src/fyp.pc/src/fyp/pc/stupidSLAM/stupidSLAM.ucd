@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="stupidSLAM" size="1215,1203" id="fyp.pc.stupidSLAM" metadata="uml2-1.0" initialized="true" scrolledY="518" tag="10" key="32303037303533312D3130206679702E70632E74657374">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.4/@sourceConnections.2" name="BayesFilter" location="50,844" size="160,218" id="fyp.pc.stupidSLAM/BayesFilter" runTimeClassModel="execute(Ljava.util.Vector;[ZLlejos.robotics.navigation.Pose;),fyp.pc.stupidSLAM.BayesFilter.Node">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="69,18">
+      <children xsi:type="editmodel:MethodEditModel" name="execute" id="fyp.pc.stupidSLAM/BayesFilter#execute(Ljava.util.Vector;[ZLlejos.robotics.navigation.Pose;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="137,141">
+      <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@children.2/@children.0/@sourceConnections.0 //@children.0/@children.2/@children.0/@sourceConnections.1" name="Node" size="137,139" id="fyp.pc.stupidSLAM/BayesFilter$Node" runTimeClassModel="isVisited,floodFill(IIIIII),direction,nodes,init(Ljava.util.Vector;[Z),direction_size">
+        <children xsi:type="editmodel:CompartmentEditModel" size="114,54">
+          <children xsi:type="editmodel:AttributeEditModel" name="direction" id="fyp.pc.stupidSLAM/BayesFilter$Node#direction"/>
+          <children xsi:type="editmodel:AttributeEditModel" name="direction_size" id="fyp.pc.stupidSLAM/BayesFilter$Node#direction_size"/>
+          <children xsi:type="editmodel:AttributeEditModel" name="isVisited" id="fyp.pc.stupidSLAM/BayesFilter$Node#isVisited"/>
+        </children>
+        <children xsi:type="editmodel:CompartmentEditModel" size="66,36">
+          <children xsi:type="editmodel:MethodEditModel" name="floodFill" id="fyp.pc.stupidSLAM/BayesFilter$Node#floodFill(IIIIII)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="init" id="fyp.pc.stupidSLAM/BayesFilter$Node#init(Ljava.util.Vector;[Z)"/>
+        </children>
+        <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+        <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="fyp.pc.stupidSLAM/BayesFilter$Node@nodes+fyp.pc.stupidSLAM/BayesFilter$Node@" source="//@children.0/@children.2/@children.0" target="//@children.0/@children.2/@children.0" targetEnd="//@children.0/@children.2/@children.0/@sourceConnections.0/@children.2" label="//@children.0/@children.2/@children.0/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@children.2/@children.0/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+          <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+          <children xsi:type="editmodel:AssociationEndEditModel" name="nodes" location="0,10" id="fyp.pc.stupidSLAM/BayesFilter$Node@nodes+fyp.pc.stupidSLAM/BayesFilter$Node@|fyp.pc.stupidSLAM/BayesFilter$Node#nodes" anchorKind="FixedAtEdge" attachSource="true" multiplicityLabel="//@children.0/@children.2/@children.0/@sourceConnections.0/@children.1/@children.2" roleLabel="//@children.0/@children.2/@children.0/@sourceConnections.0/@children.1/@children.0" orderingLabel="//@children.0/@children.2/@children.0/@sourceConnections.0/@children.1/@children.1" scopeKind="1" navigable="true">
+            <children xsi:type="editmodel:LabelEditModel" name=" + nodes" location="11,930" size="42,14" anchorKind="FirstPart"/>
+            <children xsi:type="editmodel:LabelEditModel" name="{order}" location="19,902" size="34,14" anchorKind="FirstPart"/>
+            <children xsi:type="editmodel:LabelEditModel" name="*" location="49,944" size="4,14" anchorKind="FirstPart"/>
+          </children>
+          <children xsi:type="editmodel:AssociationEndEditModel" location="10,0" id="fyp.pc.stupidSLAM/BayesFilter$Node@nodes+fyp.pc.stupidSLAM/BayesFilter$Node@|fyp.pc.stupidSLAM/BayesFilter$Node#" anchorKind="FixedAtEdge"/>
+        </sourceConnections>
+        <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="fyp.pc.stupidSLAM/BayesFilter$Node-Soyatec::Import->fyp.pc.stupidSLAM/BayesFilter$Node" source="//@children.0/@children.2/@children.0" target="//@children.0/@children.2/@children.0" targetEnd="//@children.0/@children.2/@children.0/@sourceConnections.1/@children.2" label="//@children.0/@children.2/@children.0/@sourceConnections.1/@children.0" sourceEnd="//@children.0/@children.2/@children.0/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+          <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+          <children xsi:type="editmodel:AssociationEndEditModel" location="0,10" anchorKind="FixedAtEdge" attachSource="true"/>
+          <children xsi:type="editmodel:AssociationEndEditModel" location="10,0" anchorKind="FixedAtEdge"/>
+        </sourceConnections>
+        <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+      </children>
+    </children>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="fyp.pc.stupidSLAM/BayesFilter->Standard::Call" source="//@children.0" target="//@children.7" targetEnd="//@children.0/@sourceConnections.0/@children.2" label="//@children.0/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import, Call»" size="64,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="79,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="79,744"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.5/@sourceConnections.3 //@children.7/@sourceConnections.0" name="Handler" location="542,50" size="138,434" id="fyp.pc.stupidSLAM/Handler" runTimeClassModel="main([Ljava.lang.String;),port,takeReadings(),getInstance(),sendWaypoint(Llejos.robotics.mapping.NavigationModel.NavEvent;Llejos.robotics.navigation.Waypoint;),sendEvent(Llejos.robotics.mapping.NavigationModel.NavEvent;),planPath(Llejos.robotics.navigation.Pose;Llejos.robotics.navigation.Waypoint;),len,sendExit(),goTo(Llejos.robotics.navigation.Waypoint;),connect(),callReturn(),sendMode(Llejos.robotics.mapping.NavigationModel.NavEvent;),fyp.pc.stupidSLAM.Handler.Receiver,sendDoubleArray(Llejos.robotics.mapping.NavigationModel.NavEvent;[D),rotateTo(D),sendDouble(Llejos.robotics.mapping.NavigationModel.NavEvent;D),followPath(Z)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="55,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="len" id="fyp.pc.stupidSLAM/Handler#len"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="port" id="fyp.pc.stupidSLAM/Handler#port"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="115,270">
+      <children xsi:type="editmodel:MethodEditModel" name="callReturn" id="fyp.pc.stupidSLAM/Handler#callReturn()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="connect" id="fyp.pc.stupidSLAM/Handler#connect()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="followPath" id="fyp.pc.stupidSLAM/Handler#followPath(Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getInstance" id="fyp.pc.stupidSLAM/Handler#getInstance()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="goTo" id="fyp.pc.stupidSLAM/Handler#goTo(Llejos.robotics.navigation.Waypoint;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="main" id="fyp.pc.stupidSLAM/Handler#main([Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="planPath" id="fyp.pc.stupidSLAM/Handler#planPath(Llejos.robotics.navigation.Pose;Llejos.robotics.navigation.Waypoint;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="rotateTo" id="fyp.pc.stupidSLAM/Handler#rotateTo(D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="sendDouble" id="fyp.pc.stupidSLAM/Handler#sendDouble(Llejos.robotics.mapping.NavigationModel.NavEvent;D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="sendDoubleArray" id="fyp.pc.stupidSLAM/Handler#sendDoubleArray(Llejos.robotics.mapping.NavigationModel.NavEvent;[D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="sendEvent" id="fyp.pc.stupidSLAM/Handler#sendEvent(Llejos.robotics.mapping.NavigationModel.NavEvent;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="sendExit" id="fyp.pc.stupidSLAM/Handler#sendExit()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="sendMode" id="fyp.pc.stupidSLAM/Handler#sendMode(Llejos.robotics.mapping.NavigationModel.NavEvent;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="sendWaypoint" id="fyp.pc.stupidSLAM/Handler#sendWaypoint(Llejos.robotics.mapping.NavigationModel.NavEvent;Llejos.robotics.navigation.Waypoint;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="takeReadings" id="fyp.pc.stupidSLAM/Handler#takeReadings()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="98,69">
+      <children xsi:type="editmodel:ClassEditModel" name="Receiver" size="98,67" id="fyp.pc.stupidSLAM/Handler$Receiver" runTimeClassModel="run()">
+        <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+        <children xsi:type="editmodel:CompartmentEditModel" size="46,18">
+          <children xsi:type="editmodel:MethodEditModel" name="run" id="fyp.pc.stupidSLAM/Handler$Receiver#run()"/>
+        </children>
+        <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+        <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+      </children>
+    </children>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="fyp.pc.stupidSLAM/Handler->Standard::Call" source="//@children.1" target="//@children.7" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import, Call»" size="64,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,197" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="214,197"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="fyp.pc.stupidSLAM/Handler->Standard::Call" source="//@children.1" target="//@children.4" targetEnd="//@children.1/@sourceConnections.1/@children.2" label="//@children.1/@sourceConnections.1/@children.0" sourceEnd="//@children.1/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import, Call, Access»" size="107,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,392" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="123,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="fyp.pc.stupidSLAM/Handler-Standard::Call->fyp.pc.stupidSLAM/PathFinder" source="//@children.1" target="//@children.2" targetEnd="//@children.1/@sourceConnections.2/@children.2" label="//@children.1/@sourceConnections.2/@children.0" sourceEnd="//@children.1/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="29,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,181" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="178,181"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.2 //@children.4/@sourceConnections.1" name="PathFinder" location="314,50" size="178,362" id="fyp.pc.stupidSLAM/PathFinder" runTimeClassModel="getDistance(DDLfyp.pc.stupidSLAM.PathFinder.Node;),getDistance(DDLlejos.robotics.navigation.Waypoint;),fyp.pc.stupidSLAM.PathFinder.Node,PathFinder(),findPath(Llejos.robotics.navigation.Pose;Llejos.robotics.navigation.Waypoint;),getDistance(DD)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="87,90">
+      <children xsi:type="editmodel:MethodEditModel" name="PathFinder" id="fyp.pc.stupidSLAM/PathFinder#PathFinder()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findPath" id="fyp.pc.stupidSLAM/PathFinder#findPath(Llejos.robotics.navigation.Pose;Llejos.robotics.navigation.Waypoint;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDistance" id="fyp.pc.stupidSLAM/PathFinder#getDistance(DDLlejos.robotics.navigation.Waypoint;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDistance" id="fyp.pc.stupidSLAM/PathFinder#getDistance(DDLfyp.pc.stupidSLAM.PathFinder.Node;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDistance" id="fyp.pc.stupidSLAM/PathFinder#getDistance(DD)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="155,213">
+      <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@children.2/@children.0/@sourceConnections.0 //@children.2/@sourceConnections.2" name="Node" size="155,211" id="fyp.pc.stupidSLAM/PathFinder$Node" runTimeClassModel="point,Node(),Node(Llejos.geom.Point;),compareTo(Lfyp.pc.stupidSLAM.PathFinder.Node;),equals(Ljava.lang.Object;),hashCode(),directionIndex,distanceToStart,Node(Llejos.geom.Point;Lfyp.pc.stupidSLAM.PathFinder.Node;ID)">
+        <children xsi:type="editmodel:CompartmentEditModel" size="132,54">
+          <children xsi:type="editmodel:AttributeEditModel" name="directionIndex" id="fyp.pc.stupidSLAM/PathFinder$Node#directionIndex"/>
+          <children xsi:type="editmodel:AttributeEditModel" name="distanceToStart" id="fyp.pc.stupidSLAM/PathFinder$Node#distanceToStart"/>
+          <children xsi:type="editmodel:AttributeEditModel" name="point" id="fyp.pc.stupidSLAM/PathFinder$Node#point"/>
+        </children>
+        <children xsi:type="editmodel:CompartmentEditModel" size="83,108">
+          <children xsi:type="editmodel:MethodEditModel" name="Node" id="fyp.pc.stupidSLAM/PathFinder$Node#Node(Llejos.geom.Point;)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="Node" id="fyp.pc.stupidSLAM/PathFinder$Node#Node()"/>
+          <children xsi:type="editmodel:MethodEditModel" name="Node" id="fyp.pc.stupidSLAM/PathFinder$Node#Node(Llejos.geom.Point;Lfyp.pc.stupidSLAM.PathFinder.Node;ID)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="compareTo" id="fyp.pc.stupidSLAM/PathFinder$Node#compareTo(Lfyp.pc.stupidSLAM.PathFinder.Node;)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="equals" id="fyp.pc.stupidSLAM/PathFinder$Node#equals(Ljava.lang.Object;)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="hashCode" id="fyp.pc.stupidSLAM/PathFinder$Node#hashCode()"/>
+        </children>
+        <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+        <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="fyp.pc.stupidSLAM/PathFinder$Node@prevNode+fyp.pc.stupidSLAM/PathFinder$Node@" source="//@children.2/@children.2/@children.0" target="//@children.2/@children.2/@children.0" targetEnd="//@children.2/@children.2/@children.0/@sourceConnections.0/@children.2" label="//@children.2/@children.2/@children.0/@sourceConnections.0/@children.0" sourceEnd="//@children.2/@children.2/@children.0/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+          <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+          <children xsi:type="editmodel:AssociationEndEditModel" name="prevNode" location="0,10" id="fyp.pc.stupidSLAM/PathFinder$Node@prevNode+fyp.pc.stupidSLAM/PathFinder$Node@|fyp.pc.stupidSLAM/PathFinder$Node#prevNode" anchorKind="FixedAtEdge" attachSource="true" multiplicityLabel="//@children.2/@children.2/@children.0/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.2/@children.2/@children.0/@sourceConnections.0/@children.1/@children.0" navigable="true">
+            <children xsi:type="editmodel:LabelEditModel" name=" + prevNode" location="258,208" size="59,14" anchorKind="FirstPart"/>
+            <children xsi:type="editmodel:LabelEditModel" name="0..1" location="299,180" size="18,14" anchorKind="FirstPart"/>
+          </children>
+          <children xsi:type="editmodel:AssociationEndEditModel" location="10,0" id="fyp.pc.stupidSLAM/PathFinder$Node@prevNode+fyp.pc.stupidSLAM/PathFinder$Node@|fyp.pc.stupidSLAM/PathFinder$Node#" anchorKind="FixedAtEdge"/>
+        </sourceConnections>
+        <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+      </children>
+    </children>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="fyp.pc.stupidSLAM/PathFinder@pathFinder+fyp.pc.stupidSLAM/MapUtil@" source="//@children.2" target="//@children.4" targetEnd="//@children.2/@sourceConnections.0/@children.2" label="//@children.2/@sourceConnections.0/@children.0" sourceEnd="//@children.2/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="pathFinder" location="137,362" id="fyp.pc.stupidSLAM/PathFinder@pathFinder+fyp.pc.stupidSLAM/MapUtil@|fyp.pc.stupidSLAM/PathFinder#pathFinder" attachSource="true" multiplicityLabel="//@children.2/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.2/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" ~ pathFinder" location="458,419" size="63,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="438,419" size="6,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="170,15" id="fyp.pc.stupidSLAM/PathFinder@pathFinder+fyp.pc.stupidSLAM/MapUtil@|fyp.pc.stupidSLAM/MapUtil#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="fyp.pc.stupidSLAM/PathFinder->Standard::Call" source="//@children.2" target="//@children.7" targetEnd="//@children.2/@sourceConnections.1/@children.2" label="//@children.2/@sourceConnections.1/@children.0" sourceEnd="//@children.2/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import, Call»" size="64,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,181" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="214,181"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="fyp.pc.stupidSLAM/PathFinder-Soyatec::Import->fyp.pc.stupidSLAM/PathFinder$Node" source="//@children.2" target="//@children.2/@children.2/@children.0" targetEnd="//@children.2/@sourceConnections.2/@children.2" label="//@children.2/@sourceConnections.2/@children.0" sourceEnd="//@children.2/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="178,105" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="155,105"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.7/@sourceConnections.3" name="MapPanel" location="675,844" size="158,175" id="fyp.pc.stupidSLAM/MapPanel" runTimeClassModel="getMaxWidthIndex(),getMaxHeightIndex(),getGridLen(),MapPanel(Lfyp.pc.stupidSLAM.Map;),convertToGridPosition(D),gridLen,paint(Ljava.awt.Graphics;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="72,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="gridLen" id="fyp.pc.stupidSLAM/MapPanel#gridLen"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="135,108">
+      <children xsi:type="editmodel:MethodEditModel" name="MapPanel" id="fyp.pc.stupidSLAM/MapPanel#MapPanel(Lfyp.pc.stupidSLAM.Map;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="convertToGridPosition" id="fyp.pc.stupidSLAM/MapPanel#convertToGridPosition(D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getGridLen" id="fyp.pc.stupidSLAM/MapPanel#getGridLen()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMaxHeightIndex" id="fyp.pc.stupidSLAM/MapPanel#getMaxHeightIndex()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMaxWidthIndex" id="fyp.pc.stupidSLAM/MapPanel#getMaxWidthIndex()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="paint" id="fyp.pc.stupidSLAM/MapPanel#paint(Ljava.awt.Graphics;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="fyp.pc.stupidSLAM/MapPanel@panelCenter+fyp.pc.stupidSLAM/Map@map" source="//@children.3" target="//@children.7" targetEnd="//@children.3/@sourceConnections.0/@children.2" label="//@children.3/@sourceConnections.0/@children.0" sourceEnd="//@children.3/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="panelCenter" location="0,43" id="fyp.pc.stupidSLAM/MapPanel@panelCenter+fyp.pc.stupidSLAM/Map@map|fyp.pc.stupidSLAM/MapPanel#panelCenter" attachSource="true" multiplicityLabel="//@children.3/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.3/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" ~ panelCenter" location="598,894" size="70,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="650,866" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="map" location="214,501" id="fyp.pc.stupidSLAM/MapPanel@panelCenter+fyp.pc.stupidSLAM/Map@map|fyp.pc.stupidSLAM/Map#map" multiplicityLabel="//@children.3/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.3/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" + map" location="271,530" size="32,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="271,558" size="6,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="fyp.pc.stupidSLAM/MapPanel->Standard::Call" source="//@children.3" target="//@children.7" targetEnd="//@children.3/@sourceConnections.1/@children.2" label="//@children.3/@sourceConnections.1/@children.0" sourceEnd="//@children.3/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import, Call»" size="64,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="214,443"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.0 //@children.1/@sourceConnections.1 //@children.7/@sourceConnections.2" name="MapUtil" location="260,844" size="170,193" id="fyp.pc.stupidSLAM/MapUtil" runTimeClassModel="processData(Llejos.robotics.RangeReadings;),lineMapFileName,setPose(Llejos.robotics.navigation.Pose;),getInstance(),setRangeReadings(Llejos.robotics.RangeReadings;),convertPoseToWaypoint(Llejos.robotics.navigation.Pose;),mAXI_RANGE,convertWaypointToPose(Llejos.robotics.navigation.Waypoint;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="132,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="lineMapFileName" id="fyp.pc.stupidSLAM/MapUtil#lineMapFileName"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mAXI_RANGE" id="fyp.pc.stupidSLAM/MapUtil#mAXI_RANGE"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="147,108">
+      <children xsi:type="editmodel:MethodEditModel" name="convertPoseToWaypoint" id="fyp.pc.stupidSLAM/MapUtil#convertPoseToWaypoint(Llejos.robotics.navigation.Pose;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="convertWaypointToPose" id="fyp.pc.stupidSLAM/MapUtil#convertWaypointToPose(Llejos.robotics.navigation.Waypoint;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getInstance" id="fyp.pc.stupidSLAM/MapUtil#getInstance()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="processData" id="fyp.pc.stupidSLAM/MapUtil#processData(Llejos.robotics.RangeReadings;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setPose" id="fyp.pc.stupidSLAM/MapUtil#setPose(Llejos.robotics.navigation.Pose;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setRangeReadings" id="fyp.pc.stupidSLAM/MapUtil#setRangeReadings(Llejos.robotics.RangeReadings;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="fyp.pc.stupidSLAM/MapUtil->Standard::Call" source="//@children.4" target="//@children.7" targetEnd="//@children.4/@sourceConnections.0/@children.2" label="//@children.4/@sourceConnections.0/@children.0" sourceEnd="//@children.4/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import, Call»" size="64,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,17" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="211,687"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="fyp.pc.stupidSLAM/MapUtil->Standard::Instantiate" source="//@children.4" target="//@children.2" targetEnd="//@children.4/@sourceConnections.1/@children.2" label="//@children.4/@sourceConnections.1/@children.0" sourceEnd="//@children.4/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Import»" size="96,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="111,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="57,362"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="fyp.pc.stupidSLAM/MapUtil-Standard::Call->fyp.pc.stupidSLAM/BayesFilter" source="//@children.4" target="//@children.0" targetEnd="//@children.4/@sourceConnections.2/@children.2" label="//@children.4/@sourceConnections.2/@children.0" sourceEnd="//@children.4/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="29,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,96" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="160,96"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.7/@sourceConnections.1" name="MouseHandler" location="480,844" size="145,222" id="fyp.pc.stupidSLAM/MouseHandler" runTimeClassModel="MouseHandler(),mouseMoved(Ljava.awt.event.MouseEvent;),mouseDragged(Ljava.awt.event.MouseEvent;),fyp.pc.stupidSLAM.MouseHandler.MouseStatus,mouseReleased(Ljava.awt.event.MouseEvent;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="107,72">
+      <children xsi:type="editmodel:MethodEditModel" name="MouseHandler" id="fyp.pc.stupidSLAM/MouseHandler#MouseHandler()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="mouseDragged" id="fyp.pc.stupidSLAM/MouseHandler#mouseDragged(Ljava.awt.event.MouseEvent;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="mouseMoved" id="fyp.pc.stupidSLAM/MouseHandler#mouseMoved(Ljava.awt.event.MouseEvent;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="mouseReleased" id="fyp.pc.stupidSLAM/MouseHandler#mouseReleased(Ljava.awt.event.MouseEvent;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="122,91">
+      <children xsi:type="editmodel:EnumerationEditModel" targetConnections="//@children.5/@sourceConnections.0 //@children.5/@sourceConnections.1" name="MouseStatus" size="122,89" id="fyp.pc.stupidSLAM/MouseHandler$MouseStatus" runTimeClassModel="GOTO%,TARGET%">
+        <children xsi:type="editmodel:CompartmentEditModel" size="59,36">
+          <children xsi:type="editmodel:EnumerationLiteralEditModel" name="GOTO" id="fyp.pc.stupidSLAM/MouseHandler$MouseStatus#GOTO%"/>
+          <children xsi:type="editmodel:EnumerationLiteralEditModel" name="TARGET" id="fyp.pc.stupidSLAM/MouseHandler$MouseStatus#TARGET%"/>
+        </children>
+        <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+      </children>
+    </children>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="fyp.pc.stupidSLAM/MouseHandler$MouseStatus@status+fyp.pc.stupidSLAM/MouseHandler@" source="//@children.5" target="//@children.5/@children.2/@children.0" targetEnd="//@children.5/@sourceConnections.0/@children.2" label="//@children.5/@sourceConnections.0/@children.0" sourceEnd="//@children.5/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="145,44" id="fyp.pc.stupidSLAM/MouseHandler$MouseStatus@status+fyp.pc.stupidSLAM/MouseHandler@|fyp.pc.stupidSLAM/MouseHandler#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="status" location="122,44" id="fyp.pc.stupidSLAM/MouseHandler$MouseStatus@status+fyp.pc.stupidSLAM/MouseHandler@|fyp.pc.stupidSLAM/MouseHandler$MouseStatus#status" multiplicityLabel="//@children.5/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.5/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" ~ status" location="619,1018" size="42,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="619,990" size="6,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="fyp.pc.stupidSLAM/MouseHandler-Soyatec::Import->fyp.pc.stupidSLAM/MouseHandler$MouseStatus" source="//@children.5" target="//@children.5/@children.2/@children.0" targetEnd="//@children.5/@sourceConnections.1/@children.2" label="//@children.5/@sourceConnections.1/@children.0" sourceEnd="//@children.5/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="145,64" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="122,13"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="fyp.pc.stupidSLAM/MouseHandler->Standard::Call" source="//@children.5" target="//@children.7" targetEnd="//@children.5/@sourceConnections.2/@children.2" label="//@children.5/@sourceConnections.2/@children.0" sourceEnd="//@children.5/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import, Call»" size="64,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,18" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="214,536"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="fyp.pc.stupidSLAM/MouseHandler-Standard::Call->fyp.pc.stupidSLAM/Handler" source="//@children.5" target="//@children.1" targetEnd="//@children.5/@sourceConnections.3/@children.2" label="//@children.5/@sourceConnections.3/@children.0" sourceEnd="//@children.5/@sourceConnections.3/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="29,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="103,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="41,434"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="RuntimeExecuteTest" location="50,1116" size="171,67" id="fyp.pc.test/RuntimeExecuteTest" runTimeClassModel="main([Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="52,18">
+      <children xsi:type="editmodel:MethodEditModel" name="main" id="fyp.pc.test/RuntimeExecuteTest#main([Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@sourceConnections.0 //@children.0/@sourceConnections.0 //@children.1/@sourceConnections.0 //@children.2/@sourceConnections.1 //@children.3/@sourceConnections.1 //@children.4/@sourceConnections.0 //@children.5/@sourceConnections.2" name="Map" location="50,50" size="214,744" id="fyp.pc.stupidSLAM/Map" runTimeClassModel="main([Ljava.lang.String;),getPosesIdealVector(),updateMap(Llejos.robotics.navigation.Pose;),getGridLen(),getMode(),frameUIInit(),setEvent(Z),getMaxWidthIndex(),map,convertToOccupancyMapPosition(D),convertToGridPosition(D),updateOccupancyMapValue(IID),memberInit(),getWaypointVector(),setTargetPose(Llejos.robotics.navigation.Pose;),setText(Ljava.lang.String;),updatePoseAfterCommand(Llejos.robotics.navigation.Pose;),mAX_HEIGHT,getLastPoseReal(),getInstance(),getPanel(),getOccupancyMap(),getEvent(),getOccupancyMapValue(II),getPosesRealVector(),actionPerformed(Ljava.awt.event.ActionEvent;),mAX_WIDTH,getTargetsVector(),setWaypointVector(Ljava.util.Vector;),getMaxHeightIndex(),paint(Ljava.awt.Graphics;),getLastPoseIdeal(),fyp.pc.stupidSLAM.Map.Mode,thresh_hold">
+    <children xsi:type="editmodel:CompartmentEditModel" size="114,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="mAX_HEIGHT" id="fyp.pc.stupidSLAM/Map#mAX_HEIGHT"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mAX_WIDTH" id="fyp.pc.stupidSLAM/Map#mAX_WIDTH"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="map" id="fyp.pc.stupidSLAM/Map#map"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="thresh_hold" id="fyp.pc.stupidSLAM/Map#thresh_hold"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="191,522">
+      <children xsi:type="editmodel:MethodEditModel" name="actionPerformed" id="fyp.pc.stupidSLAM/Map#actionPerformed(Ljava.awt.event.ActionEvent;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="convertToGridPosition" id="fyp.pc.stupidSLAM/Map#convertToGridPosition(D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="convertToOccupancyMapPosition" id="fyp.pc.stupidSLAM/Map#convertToOccupancyMapPosition(D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="frameUIInit" id="fyp.pc.stupidSLAM/Map#frameUIInit()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getEvent" id="fyp.pc.stupidSLAM/Map#getEvent()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getGridLen" id="fyp.pc.stupidSLAM/Map#getGridLen()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getInstance" id="fyp.pc.stupidSLAM/Map#getInstance()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLastPoseIdeal" id="fyp.pc.stupidSLAM/Map#getLastPoseIdeal()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLastPoseReal" id="fyp.pc.stupidSLAM/Map#getLastPoseReal()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMaxHeightIndex" id="fyp.pc.stupidSLAM/Map#getMaxHeightIndex()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMaxWidthIndex" id="fyp.pc.stupidSLAM/Map#getMaxWidthIndex()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMode" id="fyp.pc.stupidSLAM/Map#getMode()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getOccupancyMap" id="fyp.pc.stupidSLAM/Map#getOccupancyMap()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getOccupancyMapValue" id="fyp.pc.stupidSLAM/Map#getOccupancyMapValue(II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPanel" id="fyp.pc.stupidSLAM/Map#getPanel()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPosesIdealVector" id="fyp.pc.stupidSLAM/Map#getPosesIdealVector()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPosesRealVector" id="fyp.pc.stupidSLAM/Map#getPosesRealVector()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getTargetsVector" id="fyp.pc.stupidSLAM/Map#getTargetsVector()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getWaypointVector" id="fyp.pc.stupidSLAM/Map#getWaypointVector()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="main" id="fyp.pc.stupidSLAM/Map#main([Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="memberInit" id="fyp.pc.stupidSLAM/Map#memberInit()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="paint" id="fyp.pc.stupidSLAM/Map#paint(Ljava.awt.Graphics;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setEvent" id="fyp.pc.stupidSLAM/Map#setEvent(Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setTargetPose" id="fyp.pc.stupidSLAM/Map#setTargetPose(Llejos.robotics.navigation.Pose;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setText" id="fyp.pc.stupidSLAM/Map#setText(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setWaypointVector" id="fyp.pc.stupidSLAM/Map#setWaypointVector(Ljava.util.Vector;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="updateMap" id="fyp.pc.stupidSLAM/Map#updateMap(Llejos.robotics.navigation.Pose;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="updateOccupancyMapValue" id="fyp.pc.stupidSLAM/Map#updateOccupancyMapValue(IID)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="updatePoseAfterCommand" id="fyp.pc.stupidSLAM/Map#updatePoseAfterCommand(Llejos.robotics.navigation.Pose;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="119,91">
+      <children xsi:type="editmodel:EnumerationEditModel" name="Mode" size="119,89" id="fyp.pc.stupidSLAM/Map$Mode" runTimeClassModel="GOTOTARGETS%,BUILDMAP%">
+        <children xsi:type="editmodel:CompartmentEditModel" size="96,36">
+          <children xsi:type="editmodel:EnumerationLiteralEditModel" name="BUILDMAP" id="fyp.pc.stupidSLAM/Map$Mode#BUILDMAP%"/>
+          <children xsi:type="editmodel:EnumerationLiteralEditModel" name="GOTOTARGETS" id="fyp.pc.stupidSLAM/Map$Mode#GOTOTARGETS%"/>
+        </children>
+        <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+      </children>
+    </children>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="fyp.pc.stupidSLAM/Map-Standard::Call->fyp.pc.stupidSLAM/Handler" source="//@children.7" target="//@children.1" targetEnd="//@children.7/@sourceConnections.0/@children.2" label="//@children.7/@sourceConnections.0/@children.0" sourceEnd="//@children.7/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="29,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="214,217" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,217"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="fyp.pc.stupidSLAM/Map->Standard::Instantiate" source="//@children.7" target="//@children.5" targetEnd="//@children.7/@sourceConnections.1/@children.2" label="//@children.7/@sourceConnections.1/@children.0" sourceEnd="//@children.7/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Import»" size="96,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="214,516" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,14"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="fyp.pc.stupidSLAM/Map-Standard::Call->fyp.pc.stupidSLAM/MapUtil" source="//@children.7" target="//@children.4" targetEnd="//@children.7/@sourceConnections.2/@children.2" label="//@children.7/@sourceConnections.2/@children.0" sourceEnd="//@children.7/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="29,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="211,667" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="1,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="fyp.pc.stupidSLAM/Map->Standard::Call" source="//@children.7" target="//@children.3" targetEnd="//@children.7/@sourceConnections.3/@children.2" label="//@children.7/@sourceConnections.3/@children.0" sourceEnd="//@children.7/@sourceConnections.3/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Import, Call»" size="119,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="214,463" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,20"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" interactive="false" level="-1" showScope="InPackage" properties="wireOptions=1;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
